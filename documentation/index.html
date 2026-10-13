@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Template Documentation | BeadUp Academy</title>
+  <meta name="description" content="BeadUp Academy template docs: installation, file structure, colors and fonts, content editing, integrations, dark mode, RTL, SEO tips and support details.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://www.example.com/documentation/index.html">
+  <!-- Open Graph / social preview — TODO: update domain and image -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BeadUp Academy">
+  <meta property="og:title" content="Template Documentation | BeadUp Academy">
+  <meta property="og:description" content="BeadUp Academy template docs: installation, file structure, colors and fonts, content editing, integrations, dark mode, RTL, SEO tips and support details.">
+  <meta property="og:url" content="https://www.example.com/documentation/index.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BeadUp Academy logo with an abacus and the line Make math fast, fun and fearless">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="icon" href="../assets/images/favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../assets/images/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+  
+  <!-- Fonts: Fredoka (headings) + Atkinson Hyperlegible (body). TODO: change here and in style.css tokens -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;family=Fredoka:wght@500;600;700&amp;display=swap">
+  <!-- Bootstrap 5.3.8: main.js swaps to the RTL build when direction is RTL -->
+  <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" data-ltr="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" data-rtl="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/style.min.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.min.css">
+  <link rel="stylesheet" href="../assets/css/rtl.min.css">
+  <!-- Apply saved theme + direction before first paint (prevents flashing) -->
+  <script>(function(){try{var d=document.documentElement,t=localStorage.getItem('bu-theme'),r=localStorage.getItem('bu-dir');if(t!=='dark'&&t!=='light'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}d.setAttribute('data-bs-theme',t);if(r==='rtl'){d.setAttribute('dir','rtl');var l=document.getElementById('bootstrap-css');if(l){l.href=l.getAttribute('data-rtl');}}}catch(err){}})();</script>
+  
+  
+</head>
+<body class="bn-docs">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header"><nav class="navbar" aria-label="Documentation"><div class="container"><a class="brand" href="../pages/index.html" aria-label="BeadUp Academy — home">
+        <picture class="brand__mark">
+          <source srcset="../assets/images/logo-mark.webp" type="image/webp">
+          <img src="../assets/images/logo-mark.png" alt="" width="42" height="42" decoding="async">
+        </picture>
+        <span class="brand__text"><span class="brand__name">Bead<span>Up</span></span><span class="brand__tag">Abacus &amp; Mental Math</span></span>
+      </a>
+    <div class="header-tools ms-auto">
+      <button type="button" class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars" aria-hidden="true"></i></button>
+      <button type="button" class="icon-btn" data-dir-toggle aria-pressed="false" aria-label="Switch to right-to-left layout (Arabic, Hebrew)"><i class="bi bi-arrow-left-right" aria-hidden="true"></i></button>
+      <a class="btn btn-primary" href="../pages/index.html">View template</a>
+    </div></div></nav></header>
+  <div class="page-hero"><div class="container"><span class="eyebrow">v1.0.0</span><h1>BeadUp template documentation</h1><p>Everything you need to install, customize and launch your abacus center website.</p></div></div>
+  <div class="container section">
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-3"><nav class="card-bu sticky-side" aria-label="On this page"><h2 class="h6 text-muted text-uppercase">On this page</h2><ul class="list-unstyled d-grid gap-1 m-0 doc-toc"><li><a class="d-flex align-items-center gap-2" href="#install"><i class="bi bi-download" aria-hidden="true"></i>1. Installation</a></li><li><a class="d-flex align-items-center gap-2" href="#structure"><i class="bi bi-folder2-open" aria-hidden="true"></i>2. File &amp; page structure</a></li><li><a class="d-flex align-items-center gap-2" href="#colors"><i class="bi bi-palette" aria-hidden="true"></i>3. Colors, fonts &amp; spacing</a></li><li><a class="d-flex align-items-center gap-2" href="#content"><i class="bi bi-pencil-square" aria-hidden="true"></i>4. Editing content</a></li><li><a class="d-flex align-items-center gap-2" href="#integrations"><i class="bi bi-plug" aria-hidden="true"></i>5. Integrations</a></li><li><a class="d-flex align-items-center gap-2" href="#features"><i class="bi bi-toggles" aria-hidden="true"></i>6. Dark mode, RTL &amp; forms</a></li><li><a class="d-flex align-items-center gap-2" href="#quality"><i class="bi bi-patch-check" aria-hidden="true"></i>7. Accessibility, SEO &amp; performance</a></li><li><a class="d-flex align-items-center gap-2" href="#credits"><i class="bi bi-heart" aria-hidden="true"></i>8. Credits</a></li><li><a class="d-flex align-items-center gap-2" href="#changelog"><i class="bi bi-clock-history" aria-hidden="true"></i>9. Changelog</a></li><li><a class="d-flex align-items-center gap-2" href="#support"><i class="bi bi-life-preserver" aria-hidden="true"></i>10. Support</a></li></ul></nav></div>
+      <main id="main" class="col-lg-9" tabindex="-1"><section id="install" class="mb-5" aria-labelledby="install-h"><h2 id="install-h" class="h3"><i class="bi bi-download text-primary-ink" aria-hidden="true"></i> 1. Installation</h2>
+<p>BeadUp is plain HTML, CSS and JavaScript. There is nothing to compile to get started.</p>
+<ol>
+  <li>Unzip the package. Keep the folder structure as it is.</li>
+  <li>Open <code>pages/index.html</code> in your browser, or run a local server from the template folder:
+    <pre><code>npx serve .        # or
+python3 -m http.server 8080</code></pre>
+    then visit <code>http://localhost:8080/pages/index.html</code>. A local server is recommended so the dashboard, forms and downloads behave exactly as online.</li>
+  <li>Upload the whole folder to your host (Netlify, Vercel, cPanel, S3…). The root <code>index.html</code> redirects to <code>pages/index.html</code>.</li>
+</ol>
+<p><strong>Requirements:</strong> an internet connection for the CDN files (Bootstrap 5.3.8, Bootstrap Icons 1.13.1, Chart.js 4.5.0, Google Fonts). To run fully offline, download those files into <code>assets/js/plugins/</code> and <code>assets/fonts/</code> and update the links in each page's <code>&lt;head&gt;</code>.</p>
+<h3>Demo login</h3>
+<p>On <code>pages/login.html</code> any email plus an 8+ character password opens the parent dashboard. The dashboard uses demo data saved in the browser (localStorage). Use <em>Profile &amp; Settings → Demo tools</em> to reset it or to see empty states.</p>
+</section><section id="structure" class="mb-5" aria-labelledby="structure-h"><h2 id="structure-h" class="h3"><i class="bi bi-folder2-open text-primary-ink" aria-hidden="true"></i> 2. File &amp; page structure</h2>
+<pre><code>beadup-academy/
+├── index.html              → redirects to pages/index.html
+├── assets/
+│   ├── css/  style.css · dark-mode.css · rtl.css  (+ .min.css used by pages)
+│   ├── js/   main.js · dashboard.js              (+ .min.js used by pages)
+│   │   └── plugins/        → put local vendor copies here (optional)
+│   ├── images/             → WebP photos/illustrations, logo, favicons, og-image.jpg
+│   └── fonts/              → self-hosted fonts (optional)
+├── pages/                  → 13 public pages (2 home layouts)
+├── dashboard/              → 9 parent-dashboard pages
+├── documentation/          → this guide
+├── sitemap.xml · robots.txt · package.json · README.md</code></pre>
+<div class="table-wrap my-4"><table class="table table-bu"><caption class="visually-hidden">Pages and what they contain</caption>
+<thead><tr><th scope="col">Page</th><th scope="col">What's on it</th></tr></thead><tbody>
+<tr><th scope="row">pages/index.html</th><td>Hero with trust row, 4-step how-it-works, outcomes, level strip, achievements, 3 instructors, reviews slider, FAQ, CTA banner, newsletter</td></tr>
+<tr><th scope="row">pages/index-2.html</th><td>Alternative home: full-photo hero with a quick trial form, stats band, classes by age (tabs), 4-step zigzag journey, Week 1 vs Week 16 results, parent app, video modal, reviews with a family photo and rating badge, competition countdown</td></tr>
+<tr><th scope="row">pages/programs.html</th><td>Level roadmap, 5 program cards, free-assessment box, comparison table</td></tr>
+<tr><th scope="row">pages/program-details.html</th><td>Level 3 in depth: timeline, sample class, pricing, batch timings, FAQ, sticky summary</td></tr>
+<tr><th scope="row">pages/instructors.html</th><td>8 instructor cards, teaching method</td></tr>
+<tr><th scope="row">pages/competitions.html</th><td>Upcoming events + register modal, winners gallery, certificate ladder, sample certificate, how it works</td></tr>
+<tr><th scope="row">pages/about.html</th><td>Mission, story timeline, method, leadership, reviews</td></tr>
+<tr><th scope="row">pages/contact.html</th><td>Message form + "Book a Free Trial" form (tabs), details, hours, map placeholder</td></tr>
+<tr><th scope="row">pages/pricing.html</th><td>3 plans with monthly / per-level toggle, extra fees table</td></tr>
+<tr><th scope="row">pages/login.html · register.html</th><td>Parent portal login and sign-up with validation and password strength</td></tr>
+<tr><th scope="row">pages/404.html · coming-soon.html</th><td>Error page and countdown page with notify form</td></tr>
+<tr><th scope="row">dashboard/*.html</th><td>Overview, My Children, Enroll wizard, Skill Progress (charts), Sessions (calendar/list), Payments, Certificates, Messages, Settings</td></tr>
+</tbody></table></div>
+<p>Every page has the same header, footer and scripts. Each section is marked with an HTML comment such as <code>&lt;!-- ===== HOW IT WORKS ===== --&gt;</code>.</p>
+</section><section id="colors" class="mb-5" aria-labelledby="colors-h"><h2 id="colors-h" class="h3"><i class="bi bi-palette text-primary-ink" aria-hidden="true"></i> 3. Colors, fonts &amp; spacing</h2>
+<p>All design tokens live at the top of <code>assets/css/style.css</code> under <em>01. Design tokens</em>. Dark-mode values live in <code>assets/css/dark-mode.css</code>.</p>
+<pre><code>:root {
+  --bu-primary: #1d4ed8;    /* blue — trust */
+  --bu-secondary: #2563eb;  /* blue — achievement, main CTA */
+  --bu-accent: #15803d;     /* green — success */
+  --bu-level-1 … --bu-level-5   /* belt colors for each level */
+}</code></pre>
+<p>When you change <code>--bu-primary</code>, also update <code>--bs-primary-rgb</code> in the <em>Bootstrap variable bridge</em> so Bootstrap components match. Keep text contrast at 4.5:1 or more (check with any WCAG contrast checker).</p>
+<h3>Fonts</h3>
+<p>Headings use <strong>Fredoka</strong>; body text uses <strong>Atkinson Hyperlegible</strong> (designed for readability). To change them, edit the Google Fonts <code>&lt;link&gt;</code> in each page head and the <code>--bu-font-heading</code> / <code>--bu-font-body</code> tokens. Body text is 17px with a 1.65 line height; keep it at 16px or more.</p>
+<h3>Spacing</h3>
+<p>Spacing follows an 8px scale: <code>--bu-space-1</code> (8px) to <code>--bu-space-12</code> (96px). Bootstrap's spacing utilities (<code>mb-3</code>, <code>gap-4</code>…) are also on a 4/8px rhythm.</p>
+<h3>Breakpoints</h3>
+<p>Custom CSS uses the spec breakpoints: <strong>&lt;640</strong>, <strong>640–1024</strong>, <strong>1024–1280</strong>, <strong>&gt;1280</strong> (see section 30 of style.css). Bootstrap's grid classes keep Bootstrap's own tiers (576/768/992/1200/1400). To make the grid match exactly, compile Bootstrap from Sass with:</p>
+<pre><code>$grid-breakpoints: (xs: 0, sm: 640px, md: 768px, lg: 1024px, xl: 1280px, xxl: 1440px);
+$container-max-widths: (sm: 600px, md: 720px, lg: 980px, xl: 1240px, xxl: 1320px);</code></pre>
+</section><section id="content" class="mb-5" aria-labelledby="content-h"><h2 id="content-h" class="h3"><i class="bi bi-pencil-square text-primary-ink" aria-hidden="true"></i> 4. Editing content</h2>
+<ul>
+  <li><strong>Text:</strong> edit the HTML directly. Look for <code>TODO</code> comments at every customization point (search the folder for “TODO”).</li>
+  <li><strong>Brand:</strong> the logo mark is an image: <code>assets/images/logo-mark.webp</code> (with a <code>.png</code> fallback), shown at 42×42px — supply it at 96×96px or larger for sharp screens. Favicons are <code>favicon.ico</code>, <code>favicon-32.png</code>, <code>favicon-192.png</code> and <code>apple-touch-icon.png</code>. Change the name in the <code>.brand__name</code> span.</li>
+  <li><strong>Images:</strong> replace the WebP placeholders in <code>assets/images/</code>, keeping the same file names and size ratio (the <code>width</code>/<code>height</code> attributes prevent layout shift). Update each image's <code>alt</code> text to describe the new photo. Only use photos of children with written parental consent.</li>
+  <li><strong>Levels, fees, instructors:</strong> these appear on several pages. Update Programs, Program Details, Pricing, the Home level strip, and <code>LEVELS</code> / <code>BATCHES</code> at the top of <code>dashboard.js</code>.</li>
+  <li><strong>Stats:</strong> trust-row numbers and outcome figures on the Home page are examples. Replace them with your own.</li>
+</ul>
+</section><section id="integrations" class="mb-5" aria-labelledby="integrations-h"><h2 id="integrations-h" class="h3"><i class="bi bi-plug text-primary-ink" aria-hidden="true"></i> 5. Integrations</h2>
+<div class="table-wrap my-3"><table class="table table-bu"><caption class="visually-hidden">Integration placeholders and where to set them up</caption>
+<thead><tr><th scope="col">Feature</th><th scope="col">Where</th><th scope="col">What to do</th></tr></thead><tbody>
+<tr><th scope="row">Contact &amp; trial forms</th><td>contact.html, competitions.html</td><td>Replace <code>https://formspree.io/f/YOUR_FORM_ID</code> with your Formspree endpoint, or remove the action and add <code>data-netlify="true"</code> for Netlify Forms.</td></tr>
+<tr><th scope="row">Newsletter</th><td>index.html, coming-soon.html</td><td>Paste your Mailchimp embedded-form action URL into the form <code>action</code>. Field name <code>EMAIL</code> is already set.</td></tr>
+<tr><th scope="row">Google Maps</th><td>contact.html</td><td>Swap the <code>.map-placeholder</code> block for the commented <code>&lt;iframe&gt;</code> using your embed code.</td></tr>
+<tr><th scope="row">Booking calendar</th><td>contact.html (trial tab)</td><td>Keep the form, or embed Calendly / Cal.com inside <code>#trial-pane</code>.</td></tr>
+<tr><th scope="row">Stripe / PayPal</th><td>dashboard/payments.html</td><td>The Pay Now modal is a placeholder. Create a Stripe Checkout Session on your server and redirect, or render PayPal Smart Buttons into <code>#paypal-buttons</code>. Never collect card numbers in this form.</td></tr>
+<tr><th scope="row">Login &amp; data</th><td>login.html, register.html, dashboard.js</td><td>Point the forms at your auth endpoints and replace the <code>Api</code> methods in <code>dashboard.js</code> with <code>fetch()</code> calls. Remove <code>data-success-redirect</code> and the Demo tools panel.</td></tr>
+<tr><th scope="row">Online class links</th><td>dashboard.js (Join button)</td><td>Set each session's meeting URL where the TODO comment says.</td></tr>
+</tbody></table></div>
+<p>Any form whose action still contains <code>YOUR_</code> runs in demo mode: it validates, waits a moment and shows the success message.</p>
+</section><section id="features" class="mb-5" aria-labelledby="features-h"><h2 id="features-h" class="h3"><i class="bi bi-toggles text-primary-ink" aria-hidden="true"></i> 6. Dark mode, RTL &amp; forms</h2>
+<h3>Dark / light mode</h3>
+<p>The moon button toggles themes. On a first visit the site follows the device setting; once the visitor chooses, the choice is saved in localStorage (<code>bu-theme</code>). A tiny script in each page head applies it before the page paints, so there's no flash.</p>
+<h3>Right-to-left (Arabic, Hebrew)</h3>
+<p>The arrows button switches direction. It sets <code>&lt;html dir="rtl"&gt;</code> and swaps Bootstrap for <code>bootstrap.rtl.min.css</code>. Our CSS uses logical properties, so layouts mirror automatically; <code>rtl.css</code> flips directional icons and keeps numbers, phones and emails left-to-right. When you translate, also set <code>lang="ar"</code> or <code>lang="he"</code> on <code>&lt;html&gt;</code>.</p>
+<h3>Form validation</h3>
+<p>Add <code>class="needs-validation"</code> to a form. Each field can carry friendly messages:</p>
+<pre><code>&lt;input id="email" type="email" required
+  data-msg-required="Please add your email so we can reply."
+  data-msg-type="Please enter an email like name@example.com."
+  aria-describedby="email-error"&gt;
+&lt;div class="invalid-feedback" id="email-error"&gt;&lt;/div&gt;</code></pre>
+<p>Also supported: <code>data-msg-pattern</code>, <code>data-msg-minlength</code>, <code>data-msg-min</code>, <code>data-msg-max</code>, <code>data-match="#otherField"</code> for confirm-password, and <code>data-strength="fieldId"</code> for the strength meter. Tooltips use Bootstrap's <code>data-bs-toggle="tooltip"</code>.</p>
+<h3>Skeleton loaders &amp; empty states</h3>
+<p>Wrap a widget in <code>data-skeleton</code> with a <code>.widget__skeleton</code> and a <code>.widget__content</code> child. Call <code>Skeletons.done(el)</code> in <code>dashboard.js</code> once your data has loaded. Empty states use the <code>emptyState()</code> helper.</p>
+</section><section id="quality" class="mb-5" aria-labelledby="quality-h"><h2 id="quality-h" class="h3"><i class="bi bi-patch-check text-primary-ink" aria-hidden="true"></i> 7. Accessibility, SEO &amp; performance</h2>
+<ul>
+  <li><strong>Accessibility (WCAG 2.1 AA):</strong> skip link, visible focus rings, ARIA labels on icon buttons, labelled form fields with live error messages, 44px touch targets, one H1 per page, alt text on every image and <code>prefers-reduced-motion</code> support. Re-check contrast if you change colors.</li>
+  <li><strong>SEO:</strong> each page has a unique title (≤60 characters), a 150–160 character meta description, canonical URL, Open Graph tags and JSON-LD (EducationalOrganization + LocalBusiness, FAQPage, Course, Event, BreadcrumbList). Replace <code>https://www.example.com/</code> everywhere (pages, sitemap.xml, robots.txt) with your domain. Login, register, utility and dashboard pages are <code>noindex</code>.</li>
+  <li><strong>Performance:</strong> WebP images with fixed dimensions (no layout shift), native lazy loading below the fold, a preloaded hero image, deferred scripts and minified CSS/JS. Host on a CDN with compression for best PageSpeed scores.</li>
+</ul>
+<h3>Rebuilding the minified files</h3>
+<p>Pages load <code>*.min.css</code> and <code>*.min.js</code>. After editing the source files, run:</p>
+<pre><code>npm install
+npm run build</code></pre>
+<p>Or, during development, point the page links at <code>style.css</code> / <code>main.js</code> directly.</p>
+</section><section id="credits" class="mb-5" aria-labelledby="credits-h"><h2 id="credits-h" class="h3"><i class="bi bi-heart text-primary-ink" aria-hidden="true"></i> 8. Credits</h2>
+<ul>
+  <li><a href="https://getbootstrap.com/" rel="noopener">Bootstrap 5.3.8</a> — MIT license</li>
+  <li><a href="https://icons.getbootstrap.com/" rel="noopener">Bootstrap Icons 1.13.1</a> — MIT license</li>
+  <li><a href="https://www.chartjs.org/" rel="noopener">Chart.js 4.5.0</a> — MIT license</li>
+  <li><a href="https://fonts.google.com/specimen/Fredoka" rel="noopener">Fredoka</a> and <a href="https://fonts.google.com/specimen/Atkinson+Hyperlegible" rel="noopener">Atkinson Hyperlegible</a> — SIL Open Font License</li>
+  <li>Placeholder illustrations were made for this template and are free to use or replace.</li>
+</ul>
+</section><section id="changelog" class="mb-5" aria-labelledby="changelog-h"><h2 id="changelog-h" class="h3"><i class="bi bi-clock-history text-primary-ink" aria-hidden="true"></i> 9. Changelog</h2>
+<ul class="list-unstyled">
+  <li><span class="badge-soft badge-soft--green">v1.0.0</span> · October 2026 — First release: 13 public pages (2 home layouts), 9 dashboard pages, dark mode, RTL, documentation.</li>
+</ul>
+</section><section id="support" class="mb-5" aria-labelledby="support-h"><h2 id="support-h" class="h3"><i class="bi bi-life-preserver text-primary-ink" aria-hidden="true"></i> 10. Support</h2>
+<p>Questions or found a bug? Include your browser, the page and steps to reproduce.</p>
+<ul>
+  <li>Email: <a href="mailto:support@beadup.example">support@beadup.example</a> <!-- TODO: your support email --></li>
+  <li>Response time: within 2 working days.</li>
+  <li>Support covers template bugs and setup questions; custom development is not included.</li>
+</ul>
+</section></main>
+    </div>
+  </div>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  
+  <script src="../assets/js/main.min.js" defer></script>
+</body>
+</html>

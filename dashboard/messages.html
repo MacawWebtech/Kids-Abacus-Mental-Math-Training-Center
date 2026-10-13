@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Messages &amp; Notifications | BeadUp Parent Dashboard</title>
+  <meta name="description" content="Read messages and notifications from your child&#x27;s BeadUp teachers and the front desk, mark them as read, and send a new message whenever you need help.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://www.example.com/dashboard/messages.html">
+  <!-- Open Graph / social preview — TODO: update domain and image -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BeadUp Academy">
+  <meta property="og:title" content="Messages &amp; Notifications | BeadUp Parent Dashboard">
+  <meta property="og:description" content="Read messages and notifications from your child&#x27;s BeadUp teachers and the front desk, mark them as read, and send a new message whenever you need help.">
+  <meta property="og:url" content="https://www.example.com/dashboard/messages.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BeadUp Academy logo with an abacus and the line Make math fast, fun and fearless">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="icon" href="../assets/images/favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../assets/images/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+  
+  <!-- Fonts: Fredoka (headings) + Atkinson Hyperlegible (body). TODO: change here and in style.css tokens -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;family=Fredoka:wght@500;600;700&amp;display=swap">
+  <!-- Bootstrap 5.3.8: main.js swaps to the RTL build when direction is RTL -->
+  <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" data-ltr="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" data-rtl="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/style.min.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.min.css">
+  <link rel="stylesheet" href="../assets/css/rtl.min.css">
+  <!-- Apply saved theme + direction before first paint (prevents flashing) -->
+  <script>(function(){try{var d=document.documentElement,t=localStorage.getItem('bu-theme'),r=localStorage.getItem('bu-dir');if(t!=='dark'&&t!=='light'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}d.setAttribute('data-bs-theme',t);if(r==='rtl'){d.setAttribute('dir','rtl');var l=document.getElementById('bootstrap-css');if(l){l.href=l.getAttribute('data-rtl');}}}catch(err){}})();</script>
+  
+  
+</head>
+<body class="dash-body" data-page="messages">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="dash">
+
+    <!-- ===================== SIDEBAR (offcanvas below 992px) ===================== -->
+    <aside class="dash-sidebar offcanvas-lg offcanvas-start" tabindex="-1" id="dashSidebar" aria-labelledby="dashSidebarLabel">
+      <div class="offcanvas-header d-lg-none">
+        <h2 class="offcanvas-title h5" id="dashSidebarLabel">Parent menu</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#dashSidebar" aria-label="Close menu"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="dash-sidebar__brand"><a class="brand" href="../pages/index.html" aria-label="BeadUp Academy — home">
+        <picture class="brand__mark">
+          <source srcset="../assets/images/logo-mark.webp" type="image/webp">
+          <img src="../assets/images/logo-mark.png" alt="" width="42" height="42" decoding="async">
+        </picture>
+        <span class="brand__text"><span class="brand__name">Bead<span>Up</span></span><span class="brand__tag">Abacus &amp; Mental Math</span></span>
+      </a></div>
+        <nav aria-label="Dashboard">
+          <ul class="dash-nav">
+            <li class="dash-nav__label" aria-hidden="true">My family</li><li><a href="overview.html"><i class="bi bi-grid-1x2" aria-hidden="true"></i><span>Overview</span></a></li><li><a href="children.html"><i class="bi bi-people" aria-hidden="true"></i><span>My Children</span></a></li><li><a href="enroll.html"><i class="bi bi-plus-circle" aria-hidden="true"></i><span>Enroll in a Program</span></a></li><li><a href="progress.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Skill Progress</span></a></li><li><a href="sessions.html"><i class="bi bi-calendar-week" aria-hidden="true"></i><span>Upcoming Sessions</span></a></li><li class="dash-nav__label" aria-hidden="true">Account</li><li><a href="payments.html"><i class="bi bi-credit-card" aria-hidden="true"></i><span>Payments</span></a></li><li><a href="certificates.html"><i class="bi bi-award" aria-hidden="true"></i><span>Certificates &amp; Competitions</span></a></li><li><a href="messages.html" aria-current="page"><i class="bi bi-chat-dots" aria-hidden="true"></i><span>Messages</span><span class="count" data-unread-count hidden>0</span><span class="visually-hidden" data-unread-label></span></a></li><li><a href="settings.html"><i class="bi bi-gear" aria-hidden="true"></i><span>Profile &amp; Settings</span></a></li><li><a href="../pages/login.html?loggedout=1"><i class="bi bi-box-arrow-right" aria-hidden="true"></i><span>Log out</span></a></li>
+          </ul>
+        </nav>
+        <div class="dash-help">
+          <p class="fw-heading mb-1"><i class="bi bi-life-preserver" aria-hidden="true"></i> Need help?</p>
+          <p class="mb-2">Call the front desk, Tue–Sun.</p>
+          <a class="fw-bold ltr-num" href="tel:+15550123456">+1 (555) 012-3456</a>
+        </div>
+      </div>
+    </aside>
+    <div class="dash-main">
+
+      <!-- ===================== TOPBAR ===================== -->
+      <header class="dash-topbar">
+        <button class="icon-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#dashSidebar" aria-controls="dashSidebar" aria-label="Open menu"><i class="bi bi-list" aria-hidden="true"></i></button>
+        <div class="child-switch flex-grow-1 flex-md-grow-0">
+          <label class="visually-hidden" for="childSwitch">Viewing child</label>
+          <select class="form-select" id="childSwitch" data-child-switch aria-describedby="childSwitchHint"><option>Loading…</option></select>
+          <span class="visually-hidden" id="childSwitchHint">Choose which child's details to show on this page</span>
+        </div>
+        <div class="ms-auto d-flex align-items-center gap-2">
+          <button type="button" class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode" title="Dark mode"><i class="bi bi-moon-stars" aria-hidden="true"></i></button>
+          <button type="button" class="icon-btn d-none d-sm-inline-grid" data-dir-toggle aria-pressed="false" aria-label="Switch to right-to-left layout (Arabic, Hebrew)" title="Right-to-left"><i class="bi bi-arrow-left-right" aria-hidden="true"></i></button>
+          <a class="icon-btn position-relative" href="messages.html" aria-label="Notifications"><i class="bi bi-bell" aria-hidden="true"></i><span class="badge-dot" data-unread-dot hidden></span></a>
+          <a class="dash-user text-decoration-none ms-1" href="settings.html" aria-label="Profile and settings for Priya Mehta">
+            <span class="avatar-initials" aria-hidden="true">PM</span>
+            <span class="dash-user__text"><strong>Priya Mehta</strong><span>Parent account</span></span>
+          </a>
+        </div>
+      </header>
+      <main id="main" class="dash-content" tabindex="-1">
+        <div class="dash-head">
+          <div>
+            <h1>Messages</h1>
+            <p>Notes from teachers, fee reminders and event news.</p>
+          </div>
+          
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <section class="widget" data-skeleton aria-labelledby="inbox-h">
+              <div class="widget__head flex-wrap">
+                <h2 id="inbox-h"><i class="bi bi-inbox" aria-hidden="true"></i> Inbox</h2>
+                <button type="button" class="btn btn-sm btn-ghost" id="mark-all-read"><i class="bi bi-check2-all" aria-hidden="true"></i> Mark all read</button>
+              </div>
+              <div class="d-flex gap-2 mb-3" role="group" aria-label="Filter messages">
+                <button type="button" class="btn btn-sm btn-outline-primary active" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="btn btn-sm btn-outline-primary" data-filter="unread" aria-pressed="false">Unread</button>
+              </div>
+              <div class="widget__skeleton"><span class="skeleton skeleton--title"></span><span class="skeleton skeleton--text"></span><span class="skeleton skeleton--text w-75"></span><span class="skeleton skeleton--text w-50"></span></div>
+              <div class="widget__content" id="message-list" aria-live="polite"></div>
+            </section>
+          </div>
+          <div class="col-lg-7">
+            <section class="widget mb-4" aria-label="Message">
+              <div id="message-reader" tabindex="-1">
+                <div class="empty-state border-0 py-4"><div class="icon-bead"><i class="bi bi-envelope-open" aria-hidden="true"></i></div><h3>Choose a message</h3><p class="mb-0">Pick a message from the inbox to read it here.</p></div>
+              </div>
+            </section>
+            <section class="widget" id="compose" aria-labelledby="compose-h">
+              <div class="widget__head"><h2 id="compose-h"><i class="bi bi-pencil-square" aria-hidden="true"></i> Send a message</h2></div>
+              <form class="needs-validation row g-3" action="YOUR_MESSAGE_ENDPOINT" method="post" novalidate>
+                <div class="col-md-6">
+                <label class="form-label" for="compose-to">To <span class="req" aria-hidden="true">*</span></label>
+                <select class="form-select" id="compose-to" name="compose-to" required data-msg-required="Please choose who should get this message." aria-describedby="compose-to-error" ><option value="">Choose one</option><option value="teacher">My child's teacher</option><option value="desk">Front desk (fees, timings)</option><option value="comp">Competitions team</option></select>
+                
+                <div class="invalid-feedback" id="compose-to-error"></div>
+              </div>
+                <div class="col-md-6">
+                <label class="form-label" for="compose-subject">Subject <span class="req" aria-hidden="true">*</span></label>
+                <input class="form-control" id="compose-subject" name="compose-subject" type="text" placeholder="e.g. Question about homework" required data-msg-required="Please add a short subject." aria-describedby="compose-subject-error" >
+                
+                <div class="invalid-feedback" id="compose-subject-error"></div>
+              </div>
+                <div class="col-12">
+                <label class="form-label" for="compose-body">Message <span class="req" aria-hidden="true">*</span></label>
+                <textarea class="form-control" id="compose-body" name="compose-body" rows="4" placeholder="Write your message…" required data-msg-required="Please write your message." aria-describedby="compose-body-error" ></textarea>
+                
+                <div class="invalid-feedback" id="compose-body-error"></div>
+              </div>
+                <div class="col-12" aria-live="polite">
+                <div class="form-status alert-bu alert-bu--success" data-status="success" tabindex="-1" role="status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i><div>Message sent. Teachers usually reply within one working day.</div></div>
+                <div class="form-status alert-bu alert-bu--error" data-status="error" tabindex="-1" role="alert"><i class="bi bi-x-octagon-fill" aria-hidden="true"></i><div>Sorry, something went wrong and your message was not sent. Please try again, or call us on +1 (555) 012-3456.</div></div>
+                <div class="form-status alert-bu alert-bu--warn" data-status="invalid" tabindex="-1" role="alert"><i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i><div>A few details need a quick fix. Please check the fields marked in red.</div></div>
+              </div>
+                <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <span class="spinner-border spinner-border-sm spinner-inline" aria-hidden="true"></span>
+                  <i class="bi bi-send" aria-hidden="true"></i><span class="btn-label">Send</span>
+                </button>
+              </div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  
+  <script src="../assets/js/main.min.js" defer></script>
+  <script src="../assets/js/dashboard.min.js" defer></script>
+</body>
+</html>

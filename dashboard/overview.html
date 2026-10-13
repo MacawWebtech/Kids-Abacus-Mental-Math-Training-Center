@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overview | BeadUp Parent Dashboard</title>
+  <meta name="description" content="Your BeadUp parent dashboard overview: each child&#x27;s next class, fees waiting to be paid, their latest skill progress and any new messages from teachers.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://www.example.com/dashboard/overview.html">
+  <!-- Open Graph / social preview — TODO: update domain and image -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BeadUp Academy">
+  <meta property="og:title" content="Overview | BeadUp Parent Dashboard">
+  <meta property="og:description" content="Your BeadUp parent dashboard overview: each child&#x27;s next class, fees waiting to be paid, their latest skill progress and any new messages from teachers.">
+  <meta property="og:url" content="https://www.example.com/dashboard/overview.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BeadUp Academy logo with an abacus and the line Make math fast, fun and fearless">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="icon" href="../assets/images/favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../assets/images/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+  
+  <!-- Fonts: Fredoka (headings) + Atkinson Hyperlegible (body). TODO: change here and in style.css tokens -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;family=Fredoka:wght@500;600;700&amp;display=swap">
+  <!-- Bootstrap 5.3.8: main.js swaps to the RTL build when direction is RTL -->
+  <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" data-ltr="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" data-rtl="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/style.min.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.min.css">
+  <link rel="stylesheet" href="../assets/css/rtl.min.css">
+  <!-- Apply saved theme + direction before first paint (prevents flashing) -->
+  <script>(function(){try{var d=document.documentElement,t=localStorage.getItem('bu-theme'),r=localStorage.getItem('bu-dir');if(t!=='dark'&&t!=='light'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}d.setAttribute('data-bs-theme',t);if(r==='rtl'){d.setAttribute('dir','rtl');var l=document.getElementById('bootstrap-css');if(l){l.href=l.getAttribute('data-rtl');}}}catch(err){}})();</script>
+  
+  
+</head>
+<body class="dash-body" data-page="overview">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="dash">
+
+    <!-- ===================== SIDEBAR (offcanvas below 992px) ===================== -->
+    <aside class="dash-sidebar offcanvas-lg offcanvas-start" tabindex="-1" id="dashSidebar" aria-labelledby="dashSidebarLabel">
+      <div class="offcanvas-header d-lg-none">
+        <h2 class="offcanvas-title h5" id="dashSidebarLabel">Parent menu</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#dashSidebar" aria-label="Close menu"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="dash-sidebar__brand"><a class="brand" href="../pages/index.html" aria-label="BeadUp Academy — home">
+        <picture class="brand__mark">
+          <source srcset="../assets/images/logo-mark.webp" type="image/webp">
+          <img src="../assets/images/logo-mark.png" alt="" width="42" height="42" decoding="async">
+        </picture>
+        <span class="brand__text"><span class="brand__name">Bead<span>Up</span></span><span class="brand__tag">Abacus &amp; Mental Math</span></span>
+      </a></div>
+        <nav aria-label="Dashboard">
+          <ul class="dash-nav">
+            <li class="dash-nav__label" aria-hidden="true">My family</li><li><a href="overview.html" aria-current="page"><i class="bi bi-grid-1x2" aria-hidden="true"></i><span>Overview</span></a></li><li><a href="children.html"><i class="bi bi-people" aria-hidden="true"></i><span>My Children</span></a></li><li><a href="enroll.html"><i class="bi bi-plus-circle" aria-hidden="true"></i><span>Enroll in a Program</span></a></li><li><a href="progress.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Skill Progress</span></a></li><li><a href="sessions.html"><i class="bi bi-calendar-week" aria-hidden="true"></i><span>Upcoming Sessions</span></a></li><li class="dash-nav__label" aria-hidden="true">Account</li><li><a href="payments.html"><i class="bi bi-credit-card" aria-hidden="true"></i><span>Payments</span></a></li><li><a href="certificates.html"><i class="bi bi-award" aria-hidden="true"></i><span>Certificates &amp; Competitions</span></a></li><li><a href="messages.html"><i class="bi bi-chat-dots" aria-hidden="true"></i><span>Messages</span><span class="count" data-unread-count hidden>0</span><span class="visually-hidden" data-unread-label></span></a></li><li><a href="settings.html"><i class="bi bi-gear" aria-hidden="true"></i><span>Profile &amp; Settings</span></a></li><li><a href="../pages/login.html?loggedout=1"><i class="bi bi-box-arrow-right" aria-hidden="true"></i><span>Log out</span></a></li>
+          </ul>
+        </nav>
+        <div class="dash-help">
+          <p class="fw-heading mb-1"><i class="bi bi-life-preserver" aria-hidden="true"></i> Need help?</p>
+          <p class="mb-2">Call the front desk, Tue–Sun.</p>
+          <a class="fw-bold ltr-num" href="tel:+15550123456">+1 (555) 012-3456</a>
+        </div>
+      </div>
+    </aside>
+    <div class="dash-main">
+
+      <!-- ===================== TOPBAR ===================== -->
+      <header class="dash-topbar">
+        <button class="icon-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#dashSidebar" aria-controls="dashSidebar" aria-label="Open menu"><i class="bi bi-list" aria-hidden="true"></i></button>
+        <div class="child-switch flex-grow-1 flex-md-grow-0">
+          <label class="visually-hidden" for="childSwitch">Viewing child</label>
+          <select class="form-select" id="childSwitch" data-child-switch aria-describedby="childSwitchHint"><option>Loading…</option></select>
+          <span class="visually-hidden" id="childSwitchHint">Choose which child's details to show on this page</span>
+        </div>
+        <div class="ms-auto d-flex align-items-center gap-2">
+          <button type="button" class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode" title="Dark mode"><i class="bi bi-moon-stars" aria-hidden="true"></i></button>
+          <button type="button" class="icon-btn d-none d-sm-inline-grid" data-dir-toggle aria-pressed="false" aria-label="Switch to right-to-left layout (Arabic, Hebrew)" title="Right-to-left"><i class="bi bi-arrow-left-right" aria-hidden="true"></i></button>
+          <a class="icon-btn position-relative" href="messages.html" aria-label="Notifications"><i class="bi bi-bell" aria-hidden="true"></i><span class="badge-dot" data-unread-dot hidden></span></a>
+          <a class="dash-user text-decoration-none ms-1" href="settings.html" aria-label="Profile and settings for Priya Mehta">
+            <span class="avatar-initials" aria-hidden="true">PM</span>
+            <span class="dash-user__text"><strong>Priya Mehta</strong><span>Parent account</span></span>
+          </a>
+        </div>
+      </header>
+      <main id="main" class="dash-content" tabindex="-1">
+        <div class="dash-head">
+          <div>
+            <h1 data-greeting>Welcome back</h1>
+            <p>Here's what's happening with your children this week.</p>
+          </div>
+          <a class="btn btn-cta" href="enroll.html"><i class="bi bi-plus-circle" aria-hidden="true"></i> Enroll in a program</a>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-sm-6 col-xl-3">
+          <section class="widget" data-skeleton aria-label="Next class">
+            <div class="widget__skeleton"><div class="d-flex gap-3 align-items-center"><span class="skeleton skeleton--circle"></span><span class="flex-grow-1"><span class="skeleton skeleton--title"></span><span class="skeleton skeleton--text w-75"></span></span></div></div>
+            <div class="widget__content"><div class="stat-card"><span class="icon-bead icon-bead--sm "><i class="bi bi-calendar-event" aria-hidden="true"></i></span><div><p class="stat-card__label mb-0">Next class</p><p class="stat-card__value mb-0" data-stat="next">—</p><p class="small text-muted mb-0" data-stat="next-sub"></p></div></div></div>
+          </section>
+        </div><div class="col-sm-6 col-xl-3">
+          <section class="widget" data-skeleton aria-label="Pending payment">
+            <div class="widget__skeleton"><div class="d-flex gap-3 align-items-center"><span class="skeleton skeleton--circle"></span><span class="flex-grow-1"><span class="skeleton skeleton--title"></span><span class="skeleton skeleton--text w-75"></span></span></div></div>
+            <div class="widget__content"><div class="stat-card"><span class="icon-bead icon-bead--sm icon-bead--amber"><i class="bi bi-credit-card" aria-hidden="true"></i></span><div><p class="stat-card__label mb-0">Pending payment</p><p class="stat-card__value mb-0" data-stat="due">—</p><p class="small text-muted mb-0" data-stat="due-sub"></p></div></div></div>
+          </section>
+        </div><div class="col-sm-6 col-xl-3">
+          <section class="widget" data-skeleton aria-label="Children enrolled">
+            <div class="widget__skeleton"><div class="d-flex gap-3 align-items-center"><span class="skeleton skeleton--circle"></span><span class="flex-grow-1"><span class="skeleton skeleton--title"></span><span class="skeleton skeleton--text w-75"></span></span></div></div>
+            <div class="widget__content"><div class="stat-card"><span class="icon-bead icon-bead--sm icon-bead--green"><i class="bi bi-people" aria-hidden="true"></i></span><div><p class="stat-card__label mb-0">Children enrolled</p><p class="stat-card__value mb-0" data-stat="kids">—</p></div></div></div>
+          </section>
+        </div><div class="col-sm-6 col-xl-3">
+          <section class="widget" data-skeleton aria-label="Unread messages">
+            <div class="widget__skeleton"><div class="d-flex gap-3 align-items-center"><span class="skeleton skeleton--circle"></span><span class="flex-grow-1"><span class="skeleton skeleton--title"></span><span class="skeleton skeleton--text w-75"></span></span></div></div>
+            <div class="widget__content"><div class="stat-card"><span class="icon-bead icon-bead--sm "><i class="bi bi-chat-dots" aria-hidden="true"></i></span><div><p class="stat-card__label mb-0">Unread messages</p><p class="stat-card__value mb-0" data-stat="unread">—</p></div></div></div>
+          </section>
+        </div>
+        </div>
+        <div class="row g-4 mb-4">
+          <div class="col-xl-8">
+            <section class="widget" data-skeleton aria-labelledby="kids-h">
+              <div class="widget__head"><h2 id="kids-h"><i class="bi bi-people" aria-hidden="true"></i> Your children</h2><a class="btn btn-sm btn-ghost" href="children.html">Manage</a></div>
+              <div class="widget__skeleton row g-3"><div class="col-md-6"><span class="skeleton skeleton--block"></span></div><div class="col-md-6"><span class="skeleton skeleton--block"></span></div></div>
+              <div class="widget__content"><div class="row g-3" id="children-summary"></div></div>
+            </section>
+          </div>
+          <div class="col-xl-4"><section class="widget " data-skeleton aria-labelledby="pending-payment-h">
+            <div class="widget__head"><h2 id="pending-payment-h"><i class="bi bi-credit-card" aria-hidden="true"></i> Pending payment</h2></div>
+            <div class="widget__skeleton"><span class="skeleton skeleton--title"></span><span class="skeleton skeleton--block"></span></div>
+            <div class="widget__content" id="pending-payment"></div>
+          </section></div>
+        </div>
+        <div class="row g-4 mb-4">
+          <div class="col-lg-7"><section class="widget " data-skeleton aria-labelledby="next-sessions-h">
+            <div class="widget__head"><h2 id="next-sessions-h"><i class="bi bi-calendar-week" aria-hidden="true"></i> Next sessions</h2><a class="btn btn-sm btn-ghost" href="sessions.html">See all</a></div>
+            <div class="widget__skeleton"><span class="skeleton skeleton--title"></span><span class="skeleton skeleton--text"></span><span class="skeleton skeleton--text w-75"></span><span class="skeleton skeleton--text w-50"></span></div>
+            <div class="widget__content" id="next-sessions"></div>
+          </section></div>
+          <div class="col-lg-5"><section class="widget " data-skeleton aria-labelledby="latest-progress-h">
+            <div class="widget__head"><h2 id="latest-progress-h"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i> Latest progress</h2></div>
+            <div class="widget__skeleton"><span class="skeleton skeleton--title"></span><span class="skeleton skeleton--text"></span><span class="skeleton skeleton--text w-75"></span><span class="skeleton skeleton--text w-50"></span></div>
+            <div class="widget__content" id="latest-progress"></div>
+          </section></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-12"><section class="widget " data-skeleton aria-labelledby="recent-messages-h">
+            <div class="widget__head"><h2 id="recent-messages-h"><i class="bi bi-chat-dots" aria-hidden="true"></i> Recent messages</h2><a class="btn btn-sm btn-ghost" href="messages.html">Open inbox</a></div>
+            <div class="widget__skeleton"><span class="skeleton skeleton--title"></span><span class="skeleton skeleton--text"></span><span class="skeleton skeleton--text w-75"></span><span class="skeleton skeleton--text w-50"></span></div>
+            <div class="widget__content" id="recent-messages"></div>
+          </section></div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  
+  <script src="../assets/js/main.min.js" defer></script>
+  <script src="../assets/js/dashboard.min.js" defer></script>
+</body>
+</html>

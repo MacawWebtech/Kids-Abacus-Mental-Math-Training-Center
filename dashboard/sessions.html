@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upcoming Sessions | BeadUp Parent Dashboard</title>
+  <meta name="description" content="See your child&#x27;s upcoming BeadUp classes in a calendar or list view with batch timings and instructors. Join online classes or request a reschedule easily.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://www.example.com/dashboard/sessions.html">
+  <!-- Open Graph / social preview — TODO: update domain and image -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BeadUp Academy">
+  <meta property="og:title" content="Upcoming Sessions | BeadUp Parent Dashboard">
+  <meta property="og:description" content="See your child&#x27;s upcoming BeadUp classes in a calendar or list view with batch timings and instructors. Join online classes or request a reschedule easily.">
+  <meta property="og:url" content="https://www.example.com/dashboard/sessions.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BeadUp Academy logo with an abacus and the line Make math fast, fun and fearless">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="icon" href="../assets/images/favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../assets/images/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+  
+  <!-- Fonts: Fredoka (headings) + Atkinson Hyperlegible (body). TODO: change here and in style.css tokens -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;family=Fredoka:wght@500;600;700&amp;display=swap">
+  <!-- Bootstrap 5.3.8: main.js swaps to the RTL build when direction is RTL -->
+  <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" data-ltr="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" data-rtl="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/style.min.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.min.css">
+  <link rel="stylesheet" href="../assets/css/rtl.min.css">
+  <!-- Apply saved theme + direction before first paint (prevents flashing) -->
+  <script>(function(){try{var d=document.documentElement,t=localStorage.getItem('bu-theme'),r=localStorage.getItem('bu-dir');if(t!=='dark'&&t!=='light'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}d.setAttribute('data-bs-theme',t);if(r==='rtl'){d.setAttribute('dir','rtl');var l=document.getElementById('bootstrap-css');if(l){l.href=l.getAttribute('data-rtl');}}}catch(err){}})();</script>
+  
+  
+</head>
+<body class="dash-body" data-page="sessions">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="dash">
+
+    <!-- ===================== SIDEBAR (offcanvas below 992px) ===================== -->
+    <aside class="dash-sidebar offcanvas-lg offcanvas-start" tabindex="-1" id="dashSidebar" aria-labelledby="dashSidebarLabel">
+      <div class="offcanvas-header d-lg-none">
+        <h2 class="offcanvas-title h5" id="dashSidebarLabel">Parent menu</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#dashSidebar" aria-label="Close menu"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="dash-sidebar__brand"><a class="brand" href="../pages/index.html" aria-label="BeadUp Academy — home">
+        <picture class="brand__mark">
+          <source srcset="../assets/images/logo-mark.webp" type="image/webp">
+          <img src="../assets/images/logo-mark.png" alt="" width="42" height="42" decoding="async">
+        </picture>
+        <span class="brand__text"><span class="brand__name">Bead<span>Up</span></span><span class="brand__tag">Abacus &amp; Mental Math</span></span>
+      </a></div>
+        <nav aria-label="Dashboard">
+          <ul class="dash-nav">
+            <li class="dash-nav__label" aria-hidden="true">My family</li><li><a href="overview.html"><i class="bi bi-grid-1x2" aria-hidden="true"></i><span>Overview</span></a></li><li><a href="children.html"><i class="bi bi-people" aria-hidden="true"></i><span>My Children</span></a></li><li><a href="enroll.html"><i class="bi bi-plus-circle" aria-hidden="true"></i><span>Enroll in a Program</span></a></li><li><a href="progress.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Skill Progress</span></a></li><li><a href="sessions.html" aria-current="page"><i class="bi bi-calendar-week" aria-hidden="true"></i><span>Upcoming Sessions</span></a></li><li class="dash-nav__label" aria-hidden="true">Account</li><li><a href="payments.html"><i class="bi bi-credit-card" aria-hidden="true"></i><span>Payments</span></a></li><li><a href="certificates.html"><i class="bi bi-award" aria-hidden="true"></i><span>Certificates &amp; Competitions</span></a></li><li><a href="messages.html"><i class="bi bi-chat-dots" aria-hidden="true"></i><span>Messages</span><span class="count" data-unread-count hidden>0</span><span class="visually-hidden" data-unread-label></span></a></li><li><a href="settings.html"><i class="bi bi-gear" aria-hidden="true"></i><span>Profile &amp; Settings</span></a></li><li><a href="../pages/login.html?loggedout=1"><i class="bi bi-box-arrow-right" aria-hidden="true"></i><span>Log out</span></a></li>
+          </ul>
+        </nav>
+        <div class="dash-help">
+          <p class="fw-heading mb-1"><i class="bi bi-life-preserver" aria-hidden="true"></i> Need help?</p>
+          <p class="mb-2">Call the front desk, Tue–Sun.</p>
+          <a class="fw-bold ltr-num" href="tel:+15550123456">+1 (555) 012-3456</a>
+        </div>
+      </div>
+    </aside>
+    <div class="dash-main">
+
+      <!-- ===================== TOPBAR ===================== -->
+      <header class="dash-topbar">
+        <button class="icon-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#dashSidebar" aria-controls="dashSidebar" aria-label="Open menu"><i class="bi bi-list" aria-hidden="true"></i></button>
+        <div class="child-switch flex-grow-1 flex-md-grow-0">
+          <label class="visually-hidden" for="childSwitch">Viewing child</label>
+          <select class="form-select" id="childSwitch" data-child-switch aria-describedby="childSwitchHint"><option>Loading…</option></select>
+          <span class="visually-hidden" id="childSwitchHint">Choose which child's details to show on this page</span>
+        </div>
+        <div class="ms-auto d-flex align-items-center gap-2">
+          <button type="button" class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode" title="Dark mode"><i class="bi bi-moon-stars" aria-hidden="true"></i></button>
+          <button type="button" class="icon-btn d-none d-sm-inline-grid" data-dir-toggle aria-pressed="false" aria-label="Switch to right-to-left layout (Arabic, Hebrew)" title="Right-to-left"><i class="bi bi-arrow-left-right" aria-hidden="true"></i></button>
+          <a class="icon-btn position-relative" href="messages.html" aria-label="Notifications"><i class="bi bi-bell" aria-hidden="true"></i><span class="badge-dot" data-unread-dot hidden></span></a>
+          <a class="dash-user text-decoration-none ms-1" href="settings.html" aria-label="Profile and settings for Priya Mehta">
+            <span class="avatar-initials" aria-hidden="true">PM</span>
+            <span class="dash-user__text"><strong>Priya Mehta</strong><span>Parent account</span></span>
+          </a>
+        </div>
+      </header>
+      <main id="main" class="dash-content" tabindex="-1">
+        <div class="dash-head">
+          <div>
+            <h1>Upcoming sessions</h1>
+            <p>Every class in a calendar or a simple list. Join online classes or ask to reschedule.</p>
+          </div>
+          <button type="button" class="btn btn-cta" data-bs-toggle="modal" data-bs-target="#rescheduleModal"><i class="bi bi-arrow-repeat" aria-hidden="true"></i> Request reschedule</button>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-3">
+          <ul class="nav nav-pills-bu" role="tablist">
+            <li class="nav-item" role="presentation"><button class="nav-link active" id="cal-tab" data-bs-toggle="pill" data-bs-target="#cal-pane" type="button" role="tab" aria-controls="cal-pane" aria-selected="true"><i class="bi bi-calendar3" aria-hidden="true"></i> Calendar</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="list-tab" data-bs-toggle="pill" data-bs-target="#list-pane" type="button" role="tab" aria-controls="list-pane" aria-selected="false"><i class="bi bi-list-ul" aria-hidden="true"></i> List</button></li>
+          </ul>
+          <div class="form-check form-switch m-0">
+            <input class="form-check-input" type="checkbox" role="switch" id="show-all-children">
+            <label class="form-check-label" for="show-all-children">Show all my children</label>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="cal-pane" role="tabpanel" aria-labelledby="cal-tab" tabindex="0">
+            <section class="widget" data-skeleton aria-labelledby="cal-title">
+              <div class="widget__head">
+                <h2 id="cal-title">Month</h2>
+                <div class="d-flex gap-2">
+                  <button type="button" class="icon-btn" id="cal-prev" aria-label="Previous month"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+                  <button type="button" class="btn btn-sm btn-outline-primary" id="cal-today">Today</button>
+                  <button type="button" class="icon-btn" id="cal-next" aria-label="Next month"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+                </div>
+              </div>
+              <div class="widget__skeleton"><span class="skeleton skeleton--title"></span><span class="skeleton" style="block-size:260px"></span></div>
+              <div class="widget__content"><div class="cal" id="calendar"></div>
+                <p class="small text-muted mt-3 mb-0"><span class="badge-soft badge-soft--indigo">Class</span> <span class="badge-soft badge-soft--amber">Competition</span> · Tap a class to request a reschedule.</p>
+              </div>
+            </section>
+          </div>
+          <div class="tab-pane fade" id="list-pane" role="tabpanel" aria-labelledby="list-tab" tabindex="0">
+            <section class="widget " data-skeleton aria-labelledby="session-list-h">
+            <div class="widget__head"><h2 id="session-list-h"><i class="bi bi-list-check" aria-hidden="true"></i> Upcoming classes</h2></div>
+            <div class="widget__skeleton"><span class="skeleton skeleton--title"></span><span class="skeleton skeleton--text"></span><span class="skeleton skeleton--text w-75"></span><span class="skeleton skeleton--text w-50"></span></div>
+            <div class="widget__content" id="session-list"></div>
+          </section>
+          </div>
+        </div>
+        <div class="row g-4 mt-1">
+          <div class="col-md-6"><div class="widget"><h2 class="h5"><i class="bi bi-clock text-primary-ink" aria-hidden="true"></i> Batch timing</h2><p class="mb-0 text-muted">Classes start on time. Please arrive 5 minutes early so your child can settle in.</p></div></div>
+          <div class="col-md-6"><div class="widget"><h2 class="h5"><i class="bi bi-arrow-repeat text-primary-ink" aria-hidden="true"></i> Missed a class?</h2><p class="mb-0 text-muted">You get one free catch-up class a month. Ask at least 24 hours before.</p></div></div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ===================== RESCHEDULE MODAL ===================== -->
+  <div class="modal fade" id="rescheduleModal" tabindex="-1" aria-labelledby="rescheduleLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4">
+        <div class="modal-header"><h2 class="modal-title h4" id="rescheduleLabel">Request a reschedule</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        <div class="modal-body">
+          <p class="text-muted">Can't make a class? Ask for a catch-up in another batch. We reply within a day.</p>
+          <form class="needs-validation row g-3" action="YOUR_RESCHEDULE_ENDPOINT" method="post" novalidate>
+            <div class="col-12">
+              <label class="form-label" for="reschedule-session">Which class? <span class="req" aria-hidden="true">*</span></label>
+              <select class="form-select" id="reschedule-session" name="session" required data-msg-required="Please choose the class you'll miss." aria-describedby="reschedule-session-error"><option value="">Choose a class</option></select>
+              <div class="invalid-feedback" id="reschedule-session-error"></div>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label" for="rs-date">Preferred catch-up date <span class="req" aria-hidden="true">*</span></label>
+                <input class="form-control" id="rs-date" name="rs-date" type="date" required data-msg-required="Please pick a date that suits you." aria-describedby="rs-date-error" >
+                
+                <div class="invalid-feedback" id="rs-date-error"></div>
+              </div>
+            <div class="col-md-6">
+                <label class="form-label" for="rs-time">Preferred time <span class="req" aria-hidden="true">*</span></label>
+                <select class="form-select" id="rs-time" name="rs-time" required data-msg-required="Please choose a time of day." aria-describedby="rs-time-error" ><option value="">Choose one</option><option value="Morning">Morning</option><option value="Afternoon">Afternoon</option><option value="Evening">Evening</option><option value="Any time">Any time</option></select>
+                
+                <div class="invalid-feedback" id="rs-time-error"></div>
+              </div>
+            <div class="col-12">
+                <label class="form-label" for="rs-reason">Reason <span class="text-muted fw-normal">(optional)</span></label>
+                <textarea class="form-control" id="rs-reason" name="rs-reason" rows="2" placeholder="e.g. Family trip" aria-describedby="rs-reason-hint rs-reason-error" ></textarea>
+                <div class="form-text" id="rs-reason-hint">Optional, but it helps us plan.</div>
+                <div class="invalid-feedback" id="rs-reason-error"></div>
+              </div>
+            <div class="col-12" aria-live="polite">
+                <div class="form-status alert-bu alert-bu--success" data-status="success" tabindex="-1" role="status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i><div>Request sent! We'll confirm your catch-up class by message.</div></div>
+                <div class="form-status alert-bu alert-bu--error" data-status="error" tabindex="-1" role="alert"><i class="bi bi-x-octagon-fill" aria-hidden="true"></i><div>Sorry, something went wrong and your message was not sent. Please try again, or call us on +1 (555) 012-3456.</div></div>
+                <div class="form-status alert-bu alert-bu--warn" data-status="invalid" tabindex="-1" role="alert"><i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i><div>A few details need a quick fix. Please check the fields marked in red.</div></div>
+              </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg w-100">
+                  <span class="spinner-border spinner-border-sm spinner-inline" aria-hidden="true"></span>
+                  <i class="bi bi-send" aria-hidden="true"></i><span class="btn-label">Send request</span>
+                </button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="join-toast" class="toast align-items-center border-0 alert-bu--success" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex"><div class="toast-body d-flex gap-2 align-items-center"><i class="bi bi-camera-video" aria-hidden="true"></i>Demo: the online class link opens here. Add your meeting URL in dashboard.js.</div><button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button></div>
+    </div>
+  </div>
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  
+  <script src="../assets/js/main.min.js" defer></script>
+  <script src="../assets/js/dashboard.min.js" defer></script>
+</body>
+</html>

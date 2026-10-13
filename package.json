@@ -1,0 +1,17 @@
+{
+  "name": "beadup-academy-template",
+  "version": "1.0.0",
+  "description": "Kids abacus & mental math training center website template (Bootstrap 5).",
+  "private": true,
+  "scripts": {
+    "build:css": "cleancss -o assets/css/style.min.css assets/css/style.css && cleancss -o assets/css/dark-mode.min.css assets/css/dark-mode.css && cleancss -o assets/css/rtl.min.css assets/css/rtl.css",
+    "build:js": "terser assets/js/main.js -c -m -o assets/js/main.min.js && terser assets/js/dashboard.js -c -m -o assets/js/dashboard.min.js",
+    "build": "npm run build:css && npm run build:js",
+    "serve": "serve ."
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "serve": "^14.2.4",
+    "terser": "^5.51.2"
+  }
+}

@@ -1,0 +1,10 @@
+# BeadUp Academy — robots.txt
+# TODO: replace the domain in the Sitemap line
+User-agent: *
+Allow: /
+Disallow: /dashboard/
+Disallow: /pages/login.html
+Disallow: /pages/register.html
+Disallow: /documentation/
+
+Sitemap: https://www.example.com/sitemap.xml
